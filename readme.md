@@ -1,0 +1,1 @@
+This repo consists of all C-Programs of *R18 C Language* JNTU Syllabus.
