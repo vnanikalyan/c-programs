@@ -1,0 +1,1 @@
+//g. Write a C program that sorts the given array of integers using selection sort in descending order

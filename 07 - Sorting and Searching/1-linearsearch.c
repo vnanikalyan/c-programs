@@ -1,4 +1,4 @@
-//Write a C program that uses non recursive function to search for a Key value in a given list of integers. Use linear search method.
+//a. Write a C program that uses non recursive function to search for a Key value in a given list of integers using linear search method.
 
 #include <stdio.h>
 #include <stdlib.h>

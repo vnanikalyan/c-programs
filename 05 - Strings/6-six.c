@@ -1,0 +1,1 @@
+//h. Write a C program to count the lines, words and characters in a given text.

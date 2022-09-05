@@ -1,0 +1,1 @@
+//l. Write a program for display values reverse order from array using pointer.

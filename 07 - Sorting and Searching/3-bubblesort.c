@@ -1,4 +1,4 @@
-//Write a C program that implements the Bubble sort method to sort a given list of integers in ascending order.
+//c. Write a C program that implements the Bubble sort method to sort a given list of integers in ascending order.
 
 #include <stdio.h>
 

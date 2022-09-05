@@ -1,0 +1,1 @@
+//b. Write a functions to compute mean, variance, Standard Deviation, sorting of n elements in single dimension array.

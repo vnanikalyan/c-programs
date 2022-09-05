@@ -1,4 +1,7 @@
-//Write a C program that reads two matrices and uses functions to perform the following: 1. Addition of two matrices 2. Multiplication of two matrices
+/*c. Write a C program that uses functions to perform the following:
+- Addition of Two Matrices
+- Multiplication of Two Matrices
+- Transpose of a matrix with memory dynamically allocated for the new matrix as row and column counts may not be same.*/
 
 #include <stdio.h>
 #include <stdlib.h>

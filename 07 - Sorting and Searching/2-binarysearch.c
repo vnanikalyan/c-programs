@@ -1,4 +1,4 @@
-//Write a C program that uses non recursive function to search for a Key value in a given sorted list of integers. Use binary search method.
+//b. Write a C program that uses non recursive function to search for a Key value in a given sorted list of integers using binary search method.
 
 #include <stdio.h>
 #include <stdlib.h>

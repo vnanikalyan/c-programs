@@ -1,0 +1,1 @@
+//a. Write a C program to find the minimum, maximum and average in an array of integers.

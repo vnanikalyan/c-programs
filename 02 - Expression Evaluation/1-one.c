@@ -4,3 +4,14 @@ the top of the building. Find the time taken by the ball to reach each floor. (U
 formula s = ut+(1/2)at^2 where u and a are the initial velocity in m/sec (= 0) and
 acceleration in m/sec^2 (= 9.8 m/s^2)).
 */
+
+#include<stdio.h>
+
+int main() {
+    int floors = 10;
+    int floorHeight = 3;
+
+    int s = 
+    
+    return 0;
+}

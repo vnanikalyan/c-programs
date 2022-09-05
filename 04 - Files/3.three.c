@@ -1,0 +1,4 @@
+/*
+c. Write a C program to count the number of times a character occurs in a text file. The
+file name and the character are supplied as command line arguments.
+*/

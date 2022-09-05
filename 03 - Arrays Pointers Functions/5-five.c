@@ -1,0 +1,1 @@
+//k. Write a program for reading elements using pointer into array and display the values using array.
