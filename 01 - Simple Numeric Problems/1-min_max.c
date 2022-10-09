@@ -3,19 +3,19 @@
 #include<stdio.h>
 
 int main() {
-    int firstNumber;
-    int secondNumber;
-    int thirdNumber;
+    int first_number;
+    int second_number;
+    int third_number;
     
-    printf("Enter three numbers: ");
-    scanf("%d%d%d", &firstNumber, &secondNumber, &thirdNumber);
+    printf("%s \n", "Enter three numbers: ");
+    scanf("%d%d%d", &first_number, &second_number, &third_number);
     
-    if(firstNumber > secondNumber && firstNumber > thirdNumber) {
-        printf("%d is greater among %d, %d, %d \n", firstNumber, firstNumber, secondNumber, thirdNumber);
-    } else if(secondNumber > firstNumber && secondNumber > thirdNumber) {
-        printf("%d is greater among %d, %d, %d \n", secondNumber, firstNumber, secondNumber, thirdNumber);
+    if(first_number > second_number && first_number > third_number) {
+        printf("%d is greater among %d, %d, %d \n", first_number, first_number, second_number, third_number);
+    } else if(second_number > first_number && second_number > third_number) {
+        printf("%d is greater among %d, %d, %d \n", second_number, first_number, second_number, third_number);
     } else {
-        printf("%d is greater among %d, %d, %d \n", thirdNumber, firstNumber, secondNumber, thirdNumber);
+        printf("%d is greater among %d, %d, %d \n", third_number, first_number, second_number, third_number);
     }
 
     return 0;

@@ -11,9 +11,9 @@ int main() {
     int number;
     int i;
 
-    printf("\n Enter a number : ");
+    printf("%s", "Enter a number : ");
     scanf("%d", &number);
-    printf("\n Enter number of rows to be printed : ");
+    printf("%s", "Enter number of rows to be printed : ");
     scanf("%d", &rows);
 
     for(i=1; i<=rows;i++) {

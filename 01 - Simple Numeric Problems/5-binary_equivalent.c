@@ -7,7 +7,7 @@ int main() {
     int quotient;
     int remainder;
 
-    printf("\n Enter positive Integer - ");
+    printf("%s", "Enter positive Integer between 0 and 255 - ");
     scanf("%d", &positiveInteger);
 
     quotient = positiveInteger/2;
