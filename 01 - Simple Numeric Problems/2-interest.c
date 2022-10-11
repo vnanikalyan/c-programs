@@ -1,27 +1,28 @@
-//b. Write the program for the simple, compound interest.
+// b. Write the program for the simple, compound interest.
 
-#include<stdio.h>
-
-//simple Interest: i = ptr/100
+#include <stdio.h>
+#include <math.h>
 
 int main() {
-    int principle, time, rateOfInterest;
+    float principleAmt;
+    float time;
+    float roi;
+    float compoundingFrequency;
 
-    printf("\n Enter Principle : ");
-    scanf("%d", &principle);
+    printf("\n Enter principle Amount, time (in months), rate of interest : ");
+    scanf("%f%f%f",&principleAmt, &time, &roi);
 
-    printf("\n Enter time (No. of months) : ");
-    scanf("%d", &time);
+    //calculating simple interest
+    float simpleInterest = principleAmt * time * roi / (100 * 12);
+    printf("Simple Interest = %.2f \n", simpleInterest);
 
-    printf("\n Enter rate of interest : ");
-    scanf("%d", &rateOfInterest);
+    //calculating compound interest
+    printf("\n Enter the compounding frequency - ");
+    scanf("%f", &compoundingFrequency);
 
-    int simpleInterest = (principle * time * rateOfInterest) / (100 * 12);
-    printf("Simple interest - %d \n", simpleInterest);
-
-    int compoundInterest = (principle * time * rateOfInterest) / (100 * 12);
-    printf("Compound interest - %d \n", compoundInterest);
+    float temp_1 = pow(1 + roi/(100 *compoundingFrequency), compoundingFrequency * time/12);
+    float compoundInterest = (principleAmt * temp_1) - principleAmt;
+    printf("Compound Interest = %.2f \n", compoundInterest);
 
     return 0;
 }
-
