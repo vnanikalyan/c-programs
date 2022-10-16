@@ -2,16 +2,27 @@
 
 #include<stdio.h>
 
-int main() {
+void main() {
     int n;
-    int cnt = 0;
+	int i;
+    int j;
+	int cnt;
 
-    printf("Enter n - ");
-    scanf("%d", &n);
+	printf("\n Enter a number till which you want the prime numbers to be printed : ");
+	scanf("%d", &n);
 
-    for(int i = 1; i <= n; i++) {        
-			
+	for(j = 1; j <= n ; j++) {
+        cnt = 0;
+
+        for(i = 1; i <= j ; i++) {
+            if(j%i == 0) {
+                cnt++;
+            }			
+        }
+
+        if(cnt == 2) {
+            printf("%d \n", j);
+        }
     }
-
-    return 0;
+    
 }

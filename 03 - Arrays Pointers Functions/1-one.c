@@ -2,9 +2,10 @@
 
 #include<stdio.h>
 
-int main() {
+void main() {
     int n;
-    int array;
+    int array[10];
+    int i;
 
     int min = 999999;
     int max = 0;
@@ -27,9 +28,7 @@ int main() {
         }
     }
 
-    printf("\n Maximum number - %d", max);
-    printf("\n Minimum number - %d", min);
-    printf("\n Average number - %d", min+max/n);
-    
-    return 0;
+    printf("Maximum number - %d \n", max);
+    printf("Minimum number - %d \n", min);
+    printf("Average number - %d \n", min+max/n);
 }

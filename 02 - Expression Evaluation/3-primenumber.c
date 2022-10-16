@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main() {
+void main() {
 	
 	int n;
 	int i;
@@ -11,16 +11,18 @@ int main() {
 	printf("\n Enter an integer : ");
 	scanf("%d", &n);
 
-	for(i = 1; i <= n ; i++)
-		if(n%i == 0)
+	for(i = 1; i <= n ; i++) {
+		if(n%i == 0) {
 			cnt++;
+		}			
+	}	
 
-	if(cnt == 2)
+	if(cnt == 2) {
 		printf("\n %d is a prime number. \n", n);
-	else
+	} else {
 		printf("\n %d is not a prime number. \n", n);
+	}
 
-	return 0;
 }
 
 /*OUTPUT

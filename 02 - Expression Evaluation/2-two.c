@@ -6,7 +6,7 @@ and use Switch Statement)
 
 #include<stdio.h>
 
-int main() {
+void main() {
       int operand1;
       int operand2;
       char operator;
@@ -16,7 +16,7 @@ int main() {
       scanf("%d%d", &operand1,&operand2);
 
       printf("Enter an operator - ");
-      scanf("%c ", &operator);
+      scanf(" %c", &operator);
 
       switch(operator) {
         case '+' : result = operand1 + operand2;
@@ -32,6 +32,6 @@ int main() {
         default: printf("Invalid Operator. Valid operators are + , -, *, /, %%");
                  break;        
       }
-    
-    return 0;
+
+      printf("Result - %d \n", result);
 }
