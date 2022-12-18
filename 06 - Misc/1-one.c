@@ -6,8 +6,9 @@ an error message if an invalid choice is entered.
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-int findsmallestnumber(int arr[100], int n) {    
+int findsmallestnumber(int arr[], int n) {
     int smallest = 99999;
     int i;
     for(i=0; i<n; i++) {
@@ -19,7 +20,7 @@ int findsmallestnumber(int arr[100], int n) {
     return smallest;
 }
 
-int findlargestnumber(int arr[100], int n) {
+int findlargestnumber(int arr[], int n) {
     int largest = 0;
     int i;
     for(i=0; i<n; i++) {
@@ -31,7 +32,7 @@ int findlargestnumber(int arr[100], int n) {
     return largest;
 }
 
-int findsumofnumbers(int arr[100], int n) {
+int findsumofnumbers(int arr[], int n) {
     int sum = 0;
     int i;
     for(i=0; i<n; i++) {
@@ -41,7 +42,7 @@ int findsumofnumbers(int arr[100], int n) {
     return sum;  
 }
 
-int findaverageofnumbers(int arr[100], int n) {
+int findaverageofnumbers(int arr[], int n) {
     int sum = 0;
     int i;
     for(i=0; i<n; i++) {
@@ -53,12 +54,13 @@ int findaverageofnumbers(int arr[100], int n) {
 
 void main() {
     int n;
-    int i;
-    int arr[100];
+    int i;    
     int option;
     
     printf("Enter n - ");
     scanf("%d", &n);
+
+    int arr[n];
 
     printf("\n Enter %d numbers - ", n);
     for(i=0; i< n; i++) {
