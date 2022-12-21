@@ -7,6 +7,7 @@ int main() {
     int quotient;
     int remainder;
     int result[10];
+    int i;
 
     printf("%s", "Enter positive Integer between 0 and 255 - ");
     scanf("%d", &positiveInteger);
@@ -18,7 +19,7 @@ int main() {
         printf("%d \n", remainder);
     }
     
-    for(int i=0; quotient > 0; i++) {
+    for(i=0; quotient > 0; i++) {
         quotient = positiveInteger/2;
         remainder = positiveInteger%2;
 
@@ -27,7 +28,9 @@ int main() {
         positiveInteger = quotient;
     }
 
-    for(i=)
+    for(i=0;i<10;i++) {
+        printf("%d ", result[i]);
+    }
     
     return 0;
 }

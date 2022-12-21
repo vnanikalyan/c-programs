@@ -2,12 +2,24 @@
 
 #include <stdio.h>
 void main() {
-    int a[5] = {1,2,3,4,5};
+    int *ptr;
+    int size;
     int i;
 
-    int *ptr = a;
+    printf("Enter the size of array - ");
+    scanf("%d", &size);
 
-    for(i=4;i>=0;i--) {
-        printf("%d ", *ptr--);
+    int arr[size];
+    ptr = &arr[size-1];
+
+    printf("Enter %d elements - \n", size);
+    for(i=0; i<size; i++) {
+        scanf("%d", &arr[i]);
     }
+
+    printf("The elements in reverse order are - \n");
+    for(i=0; i<size; i++) {
+        printf("%d ", *(ptr--));
+    }
+
 }

@@ -4,8 +4,8 @@
 #include <stdlib.h>
 
 void main() {
-    FILE *fp;
-    fp = fopen("./dummy-files/file-1.txt", "r");
+    
+    FILE *fp = fopen("./dummy-files/file-1.txt", "r");
 
     if(fp == NULL) {
         printf("Unable to find the file! \n");
